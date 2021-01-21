@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <top>
+      <Pane prefHeight="800.0" prefWidth="800.0" style="-fx-background-color: #ecf0f1;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="logIn" layoutX="141.0" layoutY="618.0" mnemonicParsing="false" onAction="#handeleButtonAction" prefHeight="66.0" prefWidth="488.0" scaleShape="false" style="-fx-background-color: #3498db;" text="Login" textFill="#e8e8e8">
+               <font>
+                  <Font size="47.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <TextField fx:id="user" layoutX="140.0" layoutY="286.0" opacity="0.91" prefHeight="80.0" prefWidth="489.0" style="-fx-background-color: #FFF; -fx-border-color: black;">
+               <font>
+                  <Font name="Arial" size="34.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="pass" layoutX="141.0" layoutY="474.0" opacity="0.91" prefHeight="80.0" prefWidth="488.0" style="-fx-background-color: #FFF; -fx-border-color: black;">
+               <font>
+                  <Font name="Arial" size="34.0" />
+               </font>
+            </PasswordField>
+            <Label layoutX="140.0" layoutY="228.0" text="Login">
+               <font>
+                  <Font name="System Bold Italic" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="142.0" layoutY="419.0" text="Password">
+               <font>
+                  <Font name="System Bold Italic" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="308.0" layoutY="64.0" prefHeight="46.0" prefWidth="231.0" text="Connection">
+               <font>
+                  <Font name="System Bold" size="31.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </top>
+</BorderPane>
